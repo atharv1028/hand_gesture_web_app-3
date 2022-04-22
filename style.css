@@ -1,0 +1,39 @@
+body
+{
+    color: white;
+    background-color: orangered;
+}
+
+span
+{
+    font-size: 30px;
+}
+
+#webcam , #snapshot
+{
+  border: 2px dashed silver;
+  height: 303px;
+  width: 355px;
+}
+
+#result_emotion_name #result_emotion_name2
+{
+    color: black;
+}
+
+.emotion_name
+{
+    font-size: 40px;
+}
+
+.emoji
+{
+    font-size: 48px;
+}
+
+.heading
+{
+    font-size: 20px;
+    border-radius: 5px;
+    letter-spacing: 10px;
+}

@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>  HAND GESTURE WEB APP  </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></link>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css"  href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+        <script src=" https://unpkg.com/ml5@0.4.3/dist/ml5.min.js "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+    <body>
+        
+        <div id="container">
+
+            <center>
+            <h3 class="btn btn-primary heading"> Hand Gesture Web 
+                <br>
+                &#9996;
+                &#128077;
+                &#128078;
+                &#128076;
+            </div>
+
+            <br><br>
+
+            <span>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+
+                    <label id="webcam_text"> Webcam View - </label>
+
+                    <div id="camera"></div>
+
+                    <button class="btn btn-warning  take_snap_button" onclick="take_snapshot();"> TAKE SNAPSHOT </button>
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label>Prediction 1 - </label>
+                    <p class="emotion_name" id="result_emotion_name"></p>
+                    <p class="emoji" id="update_emotion"></p>
+            
+                    <label>Prediction 2 - </label>
+                    <p class="emotion_name" id="result_emotion_name2"></p>
+                    <p class="emoji" id="update_emotion2"></p>
+                  </div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+
+                    <label id="snaphot_text"> Snapshot - </label>
+
+                    <div id="snapshot"></div>
+                    
+                    <button class="btn btn-success  PredictImageButton" onclick="PredictIMG();"> PREDICT EMOJI </button>
+                </div>
+            </span>
+            </center>
+        </div>
+        <script src="code.js"></script>
+    </body>
+</html>
